@@ -116,7 +116,7 @@ const wireframeButton = required<HTMLButtonElement>('#wireframe-toggle');
 
 let selected: GeoPoint = INITIAL_POINT;
 
-let viewer: FaceViewer;
+let viewer: FaceViewer | undefined;
 try {
   viewer = new FaceViewer(required<HTMLElement>('#face-viewport'));
 } catch (error) {
